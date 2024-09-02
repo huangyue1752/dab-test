@@ -1,0 +1,18 @@
+# This workflow validates, deploys, and runs the specified bundle
+# within a production target named "prod".
+name: "Production deployment"
+
+# Ensure that only a single job or workflow using the same concurrency group
+# runs at a time.
+concurrency: 1
+
+# Trigger this workflow whenever a pull request is pushed to the repo's
+# main branch.
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: "Deploy bundle"

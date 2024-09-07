@@ -30,5 +30,5 @@ resources:
             autoscale:
                 min_workers: 1
                 max_workers: 4
-            data_security_mode: "SINGLE_USER"
-            
+            data_security_mode: "SHARED"
+

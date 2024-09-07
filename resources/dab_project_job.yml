@@ -3,6 +3,9 @@ resources:
   jobs:
     dab_project_job:
       name: dab_project_job
+      permissions:
+        - service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+          level: CAN_MANAGE
 
       schedule:
         # Run every day at 8:37 AM

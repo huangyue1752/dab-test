@@ -30,9 +30,6 @@ targets:
     # We use 'mode: production' to indicate this is a production deployment.
     # Doing so enables strict verification of the settings below.
     mode: production
-    permissions:
-        - service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
-          level: CAN_VIEW
     workspace:
       host: https://adb-3963031001485769.9.azuredatabricks.net
       # We always use /Users/huangyue1752@gmail.com for all resources to make sure we only have a single copy.
@@ -43,4 +40,5 @@ targets:
       # This runs as huangyue1752@gmail.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
       service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+     
     

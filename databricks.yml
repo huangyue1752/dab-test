@@ -3,6 +3,10 @@
 bundle:
   name: dab_project
 
+permissions:
+        - service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+          level: CAN_MANAGE
+
 include:
   - resources/*.yml
 

@@ -39,3 +39,6 @@ targets:
       # This runs as huangyue1752@gmail.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
       service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+    permissions:
+        - service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+          level: CAN_VIEW

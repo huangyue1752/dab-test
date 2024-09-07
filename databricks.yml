@@ -2,7 +2,7 @@
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
   name: dab_project
-  
+
 include:
   - resources/*.yml
 
@@ -42,7 +42,7 @@ targets:
     run_as:
       # This runs as huangyue1752@gmail.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
-      service_principal_name: f1e209d0-27c4-465c-8aa7-b1f80f46cfb9
+      user_name: huangyue1752@gmail.com
       
      
     
